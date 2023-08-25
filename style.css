@@ -5,13 +5,18 @@
 }
 
 body {
-  background-color: #FAFAFC;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafc;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  overflow: hidden;
 }
 body .header {
-  background-color: #FFFFFF;
+  position: relative;
+  z-index: 9999;
+  background-color: #ffffff;
   box-shadow: 0px 2px 12px 0px rgba(10, 17, 61, 0.1);
 }
 body .header .navbar {
@@ -23,6 +28,93 @@ body .header .navbar .exit-button {
   gap: 10px;
   text-decoration: none;
 }
+body .header .navbar .exit-button .show-more-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #f1f2f4;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+body .header .navbar .exit-button .show-more-icon div {
+  width: 3.83px;
+  height: 3.83px;
+  background-color: #283168;
+  border-radius: 50px;
+}
 body .header .navbar .exit-button .exit-title {
-  color: #0A113D;
+  color: #0a113d;
+}
+body .section-container {
+  height: 100%;
+}
+body .section-container .section-wrapper {
+  height: 100%;
+}
+body .section-container .section-wrapper .sidebar {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 12px 0px rgba(10, 17, 61, 0.1);
+  max-width: 303px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+body .section-container .section-wrapper .sidebar .title-container {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #f1f2f4;
+}
+body .section-container .section-wrapper .sidebar .title-container h3 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #283168;
+  margin: 0;
+}
+body .section-container .section-wrapper .sidebar .information-container {
+  padding: 20px;
+}
+body .section-container .section-wrapper .sidebar .information-container p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+body .section-container .card-container {
+  width: 100%;
+  padding: 0 0 0 20px;
+}
+body .section-container .card-container .nav {
+  display: flex;
+  gap: 22px;
+  padding: 20px 0;
+  border-bottom: 3px solid #f1f2f4;
+}
+body .section-container .card-container .nav .nav-item .nav-link {
+  position: relative;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #283168;
+}
+body .section-container .card-container .nav .nav-item .nav-link:focus {
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+}
+body .section-container .card-container .nav .nav-item .nav-link:focus::before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #01bba1;
 }/*# sourceMappingURL=style.css.map */
