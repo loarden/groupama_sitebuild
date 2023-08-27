@@ -32,39 +32,45 @@
   <body>
     <!-- Navbar -->
     <header class="header">
-      <nav class="navbar container-xl">
-        <a class="navbar-brand" href="#">
-          <img src="/public/logo_colors@2x-8.png" alt="logo" />
+      <nav class="navbar container-xl align-items-center">
+        <a class="navbar-brand p-0" href="#">
+          <img class="logo" src="/public/logo_colors@2x-8.png" alt="logo" />
         </a>
-        <a class="exit-button" href="">
-          <div class="show-more-icon d-flex d-md-none">
+        <a class="exit-button d-flex align-items-center" href="">
+          <div
+            class="show-more-icon d-flex d-lg-none align-items-center justify-content-center"
+          >
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <img src="/public/exit@2x.png" alt="exit-icon" />
-          <span class="exit-title d-none d-md-block">Kilépés</span>
+          <img class="exit-icon" src="/public/exit@2x.png" alt="exit-icon" />
+          <span class="exit-title d-none d-lg-block">Kilépés</span>
         </a>
       </nav>
     </header>
-
-    <div class="container-xl section-container">
+    <!-- Main section -->
+    <main class="container-xl section-container">
       <div class="row section-wrapper">
-        <aside class="sidebar col d-none d-md-block">
+        <!-- Sidebar -->
+        <aside class="sidebar col d-none d-lg-block">
           <div class="title-container">
             <h3>Folyamatos Díjfizetésű Ultra Prémium Életbiztosítás</h3>
           </div>
           <div class="information-container">
-            <p class="information">Szerződő neve <br>Kovács istván</p>
-            <p class="information">Szerződésszám <br>87562443</p>
-            <p class="information">Utolsó befizetés <br>2019. 06. 25.</p>
-            <p class="information">Biztosítási díj rendezve <br>2019. 07. 01.</p>
+            <p class="information">Szerződő neve <br />Kovács istván</p>
+            <p class="information">Szerződésszám <br />87562443</p>
+            <p class="information">Utolsó befizetés <br />2019. 06. 25.</p>
+            <p class="information">
+              Biztosítási díj rendezve <br />2019. 07. 01.
+            </p>
           </div>
         </aside>
-        <section class="card-container col">
+        <!-- Card section -->
+        <section class="card-container col align-items-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Fizetendő tételek</a>
+              <a class="nav-link" href="#">Fizetendő tételek</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Eseti díj befizetése</a>
@@ -73,10 +79,100 @@
               <a class="nav-link" href="#">Fizetési előzmények</a>
             </li>
           </ul>
-          
+          <div class="table container">
+            <div class="table-head row d-none d-md-flex">
+              <div class="col-2">Azonosító</div>
+              <div class="col-2">Befizetés módja</div>
+              <div class="col-2">Dátum</div>
+              <div class="col-2">Összeg</div>
+              <div class="col">Státusz</div>
+            </div>
+            <div class="table-card row container">
+              <div class="row first-line">
+                <div class="col-2 items">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 9L4.42857 5L1 1"
+                      stroke="#283168"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  EPAYMT8...
+                </div>
+                <div class="col-2 items">Bankkártya</div>
+                <div class="col-2 items">2019. 06. 25.</div>
+                <div class="col-2 items">5 000 Ft</div>
+                <div
+                  class="col-4 items d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="#A1CAFF" />
+                    </svg>
+                    Folyamatban
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.96667 9.85714L9.34914 3.97713C10.1207 3.13426 11.4403 3.10789 12.2449 3.91926V3.91926C13.0016 4.68233 13.0202 5.90695 12.2869 6.69258L6.80952 12.5612C5.5669 13.8926 3.46671 13.9244 2.18435 12.6313V12.6313C0.966138 11.4028 0.940855 9.42988 2.12718 8.17062L7.89725 2.04582C9.48826 0.356997 12.1409 0.259829 13.8512 1.82772V1.82772C15.5867 3.41865 15.6945 6.11851 14.0915 7.84278L8.5 13.8571"
+                      stroke="#9DA7BC"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <a href="#firstCollapse" data-toggle="collapse" role="button" aria-controls="firstCollapse">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="8"
+                      viewBox="0 0 11 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 1.5L5.5 6L10 1.5"
+                        stroke="#9DA7BC"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="second-line row collapse" id="firstCollapse">
+                <div class="col-4">Biztosítási időszak <br> 2019. 06. 02 - 07. 01.</div>
+                <div class="col-2">Díjelőírás <br> 5 000 Ft</div>
+                <div class="col-2">Könyvelt díj <br> 5 000 Ft</div>
+              </div>
+              <div class="second-line row collapse" id="firstCollapse">
+                <div class="col-4">Csatolmány <br> <svg width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.8176 0H1.45312C0.90084 0 0.453125 0.447716 0.453125 1V25.9334C0.453125 26.4857 0.900841 26.9334 1.45313 26.9334H20.9998C21.5521 26.9334 21.9998 26.4857 21.9998 25.9334V7.18223L14.8176 0Z" fill="#283168"/>
+                  <path d="M14.8176 6.18226V3.05176e-05L21.9999 7.18226H15.8176C15.2653 7.18226 14.8176 6.73455 14.8176 6.18226Z" fill="#616BAE"/>
+                  <path d="M6.57568 16.7647C6.81834 16.7647 7.00734 16.7017 7.14268 16.5757C7.28268 16.445 7.35268 16.2723 7.35268 16.0577C7.35268 15.8337 7.28268 15.6587 7.14268 15.5327C7.00734 15.4067 6.81834 15.3437 6.57568 15.3437H5.81268V16.7647H6.57568ZM5.80568 17.5977V19.4667H4.83968V14.5037H6.69468C6.93734 14.5037 7.15901 14.5433 7.35968 14.6227C7.56034 14.6973 7.73301 14.8047 7.87768 14.9447C8.02234 15.08 8.13201 15.2433 8.20668 15.4347C8.28601 15.6213 8.32568 15.8267 8.32568 16.0507C8.32568 16.2747 8.28601 16.4823 8.20668 16.6737C8.13201 16.865 8.02234 17.0283 7.87768 17.1637C7.73301 17.299 7.56034 17.4063 7.35968 17.4857C7.15901 17.5603 6.93734 17.5977 6.69468 17.5977H5.80568ZM10.814 18.5707C11.0146 18.5707 11.206 18.5403 11.388 18.4797C11.57 18.4143 11.7286 18.3163 11.864 18.1857C11.9993 18.055 12.1066 17.8917 12.186 17.6957C12.2653 17.495 12.305 17.2593 12.305 16.9887C12.305 16.718 12.2653 16.4847 12.186 16.2887C12.1066 16.088 11.9993 15.9223 11.864 15.7917C11.7333 15.661 11.577 15.563 11.395 15.4977C11.213 15.4323 11.0216 15.3997 10.821 15.3997H10.044V18.5707H10.814ZM9.07796 19.4667V14.5037H10.856C11.2106 14.5037 11.5373 14.5597 11.836 14.6717C12.1346 14.7837 12.3913 14.947 12.606 15.1617C12.8253 15.3717 12.9956 15.6307 13.117 15.9387C13.243 16.2467 13.306 16.5967 13.306 16.9887C13.306 17.3807 13.243 17.7307 13.117 18.0387C12.9956 18.3467 12.8253 18.6057 12.606 18.8157C12.3866 19.0257 12.1276 19.1867 11.829 19.2987C11.5303 19.4107 11.2036 19.4667 10.849 19.4667H9.07796ZM14.1912 19.4667V14.5037H17.3272V15.4207H15.1572V16.6457H17.0892V17.5347H15.1642V19.4667H14.1912Z" fill="white"/>
+                  </svg> Fizetési nyugta letöltése</div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-    </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
