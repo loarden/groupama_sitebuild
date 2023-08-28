@@ -19,7 +19,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   .header {
     position: relative;
@@ -118,6 +119,7 @@ body {
   }
 
   .main-section {
+    overflow-y: auto !important;
     padding: 0 0 0 25px;
 
     .nav {
