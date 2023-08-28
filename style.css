@@ -21,7 +21,7 @@ body .header {
 }
 body .header .navbar {
   height: 80px;
-  padding: 0 0 0 10px;
+  padding: 0 10px;
 }
 body .header .navbar .exit-button {
   gap: 10px;
@@ -46,7 +46,6 @@ body .header .navbar .exit-button .exit-title {
 @media screen and (max-width: 768px) {
   body .header .navbar {
     height: 50px;
-    padding: 0 16px;
   }
   body .header .navbar .logo {
     width: 114.71px;
@@ -57,13 +56,14 @@ body .header .navbar .exit-button .exit-title {
     height: 18px;
   }
 }
-body .section-container {
+
+.section-container {
   height: 100%;
 }
-body .section-container .section-wrapper {
+.section-container .section-wrapper {
   height: 100%;
 }
-body .section-container .section-wrapper .sidebar {
+.section-container .section-wrapper .sidebar {
   background-color: #ffffff;
   box-shadow: 0px 2px 12px 0px rgba(10, 17, 61, 0.1);
   max-width: 303px;
@@ -71,12 +71,12 @@ body .section-container .section-wrapper .sidebar {
   height: 100%;
   padding: 0;
 }
-body .section-container .section-wrapper .sidebar .title-container {
+.section-container .section-wrapper .sidebar .title-container {
   width: 100%;
   padding: 24px 10px 21px 20px;
   border-bottom: 1px solid #f1f2f4;
 }
-body .section-container .section-wrapper .sidebar .title-container h3 {
+.section-container .section-wrapper .sidebar .title-container h3 {
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
@@ -86,26 +86,26 @@ body .section-container .section-wrapper .sidebar .title-container h3 {
   color: #283168;
   margin: 0;
 }
-body .section-container .section-wrapper .sidebar .information-container {
+.section-container .section-wrapper .sidebar .information-container {
   padding: 25px 20px;
 }
-body .section-container .section-wrapper .sidebar .information-container p {
+.section-container .section-wrapper .sidebar .information-container p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.75px;
   text-align: left;
   margin-bottom: 24px;
 }
-body .section-container .card-container {
+.section-container .main-section {
   padding: 0 0 0 25px;
 }
-body .section-container .card-container .nav {
+.section-container .main-section .nav {
   gap: 30px;
   flex-wrap: nowrap;
   padding: 40px 0 33px 0;
   border-bottom: 3px solid #f1f2f4;
 }
-body .section-container .card-container .nav .nav-item .nav-link {
+.section-container .main-section .nav .nav-item .nav-link {
   position: relative;
   padding: 0;
   height: 10px;
@@ -117,11 +117,11 @@ body .section-container .card-container .nav .nav-item .nav-link {
   word-wrap: break-word;
   color: #283168;
 }
-body .section-container .card-container .nav .nav-item .nav-link:focus {
+.section-container .main-section .nav .nav-item .nav-link:focus {
   font-weight: 600;
   position: relative;
 }
-body .section-container .card-container .nav .nav-item .nav-link:focus::before {
+.section-container .main-section .nav .nav-item .nav-link:focus::before {
   content: "";
   position: absolute;
   bottom: -36px;
@@ -131,95 +131,142 @@ body .section-container .card-container .nav .nav-item .nav-link:focus::before {
   border-radius: 2px;
   background-color: #01bba1;
 }
-body .section-container .card-container .table {
+.section-container .main-section .table {
   margin: 0;
   padding: 0 30px 0 0;
 }
-body .section-container .card-container .table .table-head,
-body .section-container .card-container .table .table-card {
+.section-container .main-section .table .table-head,
+.section-container .main-section .table .table-card {
   width: 100%;
-  padding: 0 0 0 19px;
+  padding: 0 33px 0 19px;
 }
-body .section-container .card-container .table .table-head {
+.section-container .main-section .table .table-head {
   width: 100%;
-  margin-top: 30px;
+  margin: 30px 0 0 0;
 }
-body .section-container .card-container .table .table-head div {
+.section-container .main-section .table .table-head div {
   color: #6f7381;
   font-style: normal;
   line-height: 16px;
   letter-spacing: 0.5px;
   padding: 0;
 }
-body .section-container .card-container .table .table-card {
+.section-container .main-section .table .table-card {
   align-items: center;
   margin: 16px 0 0 0;
   width: 100%;
-  padding-left: 30px;
+  padding: 0 33px 0 19px;
   background-color: #ffffff;
   border-radius: 4px;
   min-height: 79px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
-body .section-container .card-container .table .table-card .first-line {
+.section-container .main-section .table .table-card .first-line {
   width: 100%;
+  margin: 0;
 }
-body .section-container .card-container .table .table-card .first-line .items {
+.section-container .main-section .table .table-card .first-line .items {
   padding: 35px 0;
   color: #3d424c;
   font-size: 14px;
   font-style: normal;
   line-height: normal;
 }
-body .section-container .card-container .table .table-card .first-line .items:nth-child(2) {
+.section-container .main-section .table .table-card .first-line .items:nth-child(2) {
   line-height: 163.418%;
   letter-spacing: 0.75px;
   text-transform: capitalize;
 }
-body .section-container .card-container .table .table-card .first-line .items:nth-child(5) {
+.section-container .main-section .table .table-card .first-line .items:nth-child(5) {
   line-height: 163.418%;
   letter-spacing: 0.75px;
   text-transform: capitalize;
 }
-body .section-container .card-container .table .table-card .first-line .items:nth-child(4) {
+.section-container .main-section .table .table-card .first-line .items:nth-child(4) {
   font-size: 16px;
   font-weight: 600;
 }
-body .section-container .card-container .table .table-card .second-line {
+.section-container .main-section .table .table-card .first-line a:not(.collapsed) {
+  transform: rotate(180deg);
+}
+.section-container .main-section .table .table-card .second-line {
   border-top: 1px solid #f1f2f4;
   border-bottom: 1px solid #f1f2f4;
   align-items: center;
   width: 100%;
+  margin: 0;
   min-height: 79px;
 }
-body .section-container .card-container .table .table-card .second-line div {
-  padding: 0;
+.section-container .main-section .table .table-card .second-line div {
+  padding: 18px 0;
   color: #3d424c;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 114.286% */
+  line-height: 30px;
   letter-spacing: 0.5px;
 }
-@media screen and (max-width: 767px) {
-  body .section-container .card-container {
+.section-container .main-section .table .table-card .second-line .date {
+  font-size: 15px;
+}
+.section-container .main-section .table .table-card .second-line .amount {
+  font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .section-container .main-section {
     padding: 0 15px;
   }
-  body .section-container .card-container .nav {
+  .section-container .main-section .table {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-container .main-section .nav {
     padding: 24px 0 16px 0;
   }
-  body .section-container .card-container .nav .nav-item .nav-link {
+  .section-container .main-section .nav .nav-item .nav-link {
     height: 28px;
     line-height: normal;
     letter-spacing: 0.5px;
   }
-  body .section-container .card-container .nav .nav-item .nav-link:focus::before {
+  .section-container .main-section .nav .nav-item .nav-link:focus::before {
     bottom: -19px;
   }
-  body .section-container .card-container .d-flex {
-    margin: 0;
-    padding-right: 0;
+  .section-container .main-section .table .table-card {
+    padding: 0 26px 0 16px;
   }
-  body .section-container .card-container .d-flex .transaction-card {
-    height: 102px;
+  .section-container .main-section .table .table-card .first-line .items {
+    padding: 24px 0;
+  }
+  .section-container .main-section .table .table-card .first-line .items div {
+    margin: 0;
+    line-height: 22px;
+  }
+  .section-container .main-section .table .table-card .first-line .items div:nth-child(1) {
+    font-size: 12px;
+  }
+  .section-container .main-section .table .table-card .first-line .items div:nth-child(2) {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .section-container .main-section .table .table-card .first-line .items div:nth-child(3) {
+    font-size: 12px;
+  }
+  .section-container .main-section .table .table-card .second-line {
+    padding: 24px 0;
+  }
+  .section-container .main-section .table .table-card .second-line div {
+    padding: 0;
+    gap: 24px;
+  }
+  .section-container .main-section .table .table-card .second-line div div {
+    padding: 0;
+  }
+  .section-container .main-section .table .table-card .second-line div div p {
+    margin: 0;
+  }
+  .section-container .main-section .table .table-card .second-line div div p:nth-child(1) {
+    font-size: 12px;
+    line-height: 12px; /* 133.333% */
+    letter-spacing: 0.5px;
   }
 }/*# sourceMappingURL=style.css.map */
