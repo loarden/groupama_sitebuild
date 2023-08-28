@@ -28,24 +28,22 @@ Nyiss meg egy parancssor ablakot (Windows) vagy terminált (macOS és Linux) a s
 Most már klónozhatod a repository-t a GitHub-ról a saját számítógépedre a következő lépésekkel:
 
 1.Változtasd meg a munkakönyvtárat arra a helyre, ahol a repository-t szeretnéd klónozni. Ehhez használhatod a cd parancsot (change directory).
-bash
-Copy code
-```
+
+```bash
 cd eleresi/utvonal/a/munkakonyvtarhoz
 ```
-Klónozd le a repository-t a megadott URL segítségével. Cseréld le az {URL} szót a korábban másolt GitHub repository URL-jére.
+2. Klónozd le a repository-t a megadott URL segítségével. Cseréld le az {URL} szót a korábban másolt GitHub repository URL-jére.
 
-bash
-Copy code
 ```bash
 git clone {URL}
 ```
-A klónozás befejeztével lépj be a repository mappájába.
+3. A klónozás befejeztével lépj be a repository mappájába.
 
-bash
-Copy code
+```bash
 cd repository-nev
+```
 Most már a repository tartalma klónozva van a számítógépedre és a munkádat elkezdheted.
 
-Összegzés
+## Összegzés
+
 Ezzel a dokumentációval betekintést kaptál abba, hogy hogyan kell klónozni egy GitHub repository-t a saját számítógépedre. Ezekkel a lépésekkel könnyedén elérheted a repository tartalmát, és helyi fejlesztéseket végezhetsz rajta. Ne felejtsd el, hogy a repository URL-jét megszerezni és a Git telepítését először elvégezni kell a folyamat során.
