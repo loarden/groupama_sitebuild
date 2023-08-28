@@ -186,7 +186,7 @@ body .header .navbar .exit-button .exit-title {
   font-size: 16px;
   font-weight: 600;
 }
-.section-container .main-section .table .table-card .first-line a:not(.collapsed) {
+.section-container .main-section .table .table-card .first-line .open {
   transform: rotate(180deg);
 }
 .section-container .main-section .table .table-card .second-line {
@@ -210,6 +210,12 @@ body .header .navbar .exit-button .exit-title {
 }
 .section-container .main-section .table .table-card .second-line .amount {
   font-weight: 600;
+}
+.section-container .main-section .table .table-card .id {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
 }
 @media screen and (max-width: 991px) {
   .section-container .main-section {
